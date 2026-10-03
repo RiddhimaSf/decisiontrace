@@ -1,0 +1,9 @@
+scenario,title,state,expected,state_ok,winner,lead_pp,win_rate_pct,stability_pct,confidence,headline,headline_issues
+base,Baseline,MODERATE,LOW/MODERATE/ROBUST,True,B,9.02,100.0,74.8,Moderate,"B (Better reliability) leads A by 9.0pp in the simulation, but the lead depends on assumptions.",
+imbalance,Population imbalance,INSUFFICIENT_EVIDENCE,INSUFFICIENT_EVIDENCE,True,B,7.11,95.0,71.0,Insufficient,Insufficient evidence: Enterprise is 25% of the weighted result but only 169 agents (minimum 200).,
+missing_segment,Missing segment,INSUFFICIENT_EVIDENCE,INSUFFICIENT_EVIDENCE,True,A,9.21,100.0,70.0,Insufficient,Insufficient evidence: no Enterprise agents in the population.,
+high_variance,High run-to-run variance,UNSTABLE,UNSTABLE,True,B,3.7,50.0,74.8,Insufficient,Result unstable: insufficient evidence for a robust preference.,
+contradictory,Contradictory subgroups,CONTESTED,CONTESTED,True,B,5.3,95.0,64.8,Low,"B (Better reliability) leads overall by 5.3pp, but the aggregate masks strong segment disagreement.",
+stale,Stale simulation,STALE,STALE,True,B,9.02,100.0,74.8,Insufficient,Out of date: this run used input v1; the current input is v2. Re-run before using.,
+insufficient_sample,Insufficient sample,INSUFFICIENT_EVIDENCE,INSUFFICIENT_EVIDENCE,True,B,9.14,95.0,73.8,Insufficient,"Insufficient evidence: only 300 simulated agents (minimum 1,000).",
+near_tie,Near tie,UNSTABLE,UNSTABLE,True,B,2.34,65.0,74.8,Insufficient,Result unstable: insufficient evidence for a robust preference.,

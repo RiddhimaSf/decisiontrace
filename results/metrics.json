@@ -1,0 +1,455 @@
+{
+  "scenarios": [
+    {
+      "scenario": "base",
+      "title": "Baseline",
+      "state": "MODERATE",
+      "expected": "LOW/MODERATE/ROBUST",
+      "state_ok": true,
+      "winner": "B",
+      "lead_pp": 9.02,
+      "win_rate_pct": 100.0,
+      "stability_pct": 74.8,
+      "confidence": "Moderate",
+      "headline": "B (Better reliability) leads A by 9.0pp in the simulation, but the lead depends on assumptions.",
+      "headline_issues": ""
+    },
+    {
+      "scenario": "imbalance",
+      "title": "Population imbalance",
+      "state": "INSUFFICIENT_EVIDENCE",
+      "expected": "INSUFFICIENT_EVIDENCE",
+      "state_ok": true,
+      "winner": "B",
+      "lead_pp": 7.11,
+      "win_rate_pct": 95.0,
+      "stability_pct": 71.0,
+      "confidence": "Insufficient",
+      "headline": "Insufficient evidence: Enterprise is 25% of the weighted result but only 169 agents (minimum 200).",
+      "headline_issues": ""
+    },
+    {
+      "scenario": "missing_segment",
+      "title": "Missing segment",
+      "state": "INSUFFICIENT_EVIDENCE",
+      "expected": "INSUFFICIENT_EVIDENCE",
+      "state_ok": true,
+      "winner": "A",
+      "lead_pp": 9.21,
+      "win_rate_pct": 100.0,
+      "stability_pct": 70.0,
+      "confidence": "Insufficient",
+      "headline": "Insufficient evidence: no Enterprise agents in the population.",
+      "headline_issues": ""
+    },
+    {
+      "scenario": "high_variance",
+      "title": "High run-to-run variance",
+      "state": "UNSTABLE",
+      "expected": "UNSTABLE",
+      "state_ok": true,
+      "winner": "B",
+      "lead_pp": 3.7,
+      "win_rate_pct": 50.0,
+      "stability_pct": 74.8,
+      "confidence": "Insufficient",
+      "headline": "Result unstable: insufficient evidence for a robust preference.",
+      "headline_issues": ""
+    },
+    {
+      "scenario": "contradictory",
+      "title": "Contradictory subgroups",
+      "state": "CONTESTED",
+      "expected": "CONTESTED",
+      "state_ok": true,
+      "winner": "B",
+      "lead_pp": 5.3,
+      "win_rate_pct": 95.0,
+      "stability_pct": 64.8,
+      "confidence": "Low",
+      "headline": "B (Better reliability) leads overall by 5.3pp, but the aggregate masks strong segment disagreement.",
+      "headline_issues": ""
+    },
+    {
+      "scenario": "stale",
+      "title": "Stale simulation",
+      "state": "STALE",
+      "expected": "STALE",
+      "state_ok": true,
+      "winner": "B",
+      "lead_pp": 9.02,
+      "win_rate_pct": 100.0,
+      "stability_pct": 74.8,
+      "confidence": "Insufficient",
+      "headline": "Out of date: this run used input v1; the current input is v2. Re-run before using.",
+      "headline_issues": ""
+    },
+    {
+      "scenario": "insufficient_sample",
+      "title": "Insufficient sample",
+      "state": "INSUFFICIENT_EVIDENCE",
+      "expected": "INSUFFICIENT_EVIDENCE",
+      "state_ok": true,
+      "winner": "B",
+      "lead_pp": 9.14,
+      "win_rate_pct": 95.0,
+      "stability_pct": 73.8,
+      "confidence": "Insufficient",
+      "headline": "Insufficient evidence: only 300 simulated agents (minimum 1,000).",
+      "headline_issues": ""
+    },
+    {
+      "scenario": "near_tie",
+      "title": "Near tie",
+      "state": "UNSTABLE",
+      "expected": "UNSTABLE",
+      "state_ok": true,
+      "winner": "B",
+      "lead_pp": 2.34,
+      "win_rate_pct": 65.0,
+      "stability_pct": 74.8,
+      "confidence": "Insufficient",
+      "headline": "Result unstable: insufficient evidence for a robust preference.",
+      "headline_issues": ""
+    }
+  ],
+  "grounded": {
+    "n_answers": 408,
+    "rates": {
+      "citation": 1.0,
+      "numeric": 1.0,
+      "observed": 1.0,
+      "uncertainty": 1.0,
+      "overreach": 1.0,
+      "intent": 1.0,
+      "all": 1.0
+    },
+    "by_scenario": {
+      "base": {
+        "citation": 1.0,
+        "numeric": 1.0,
+        "observed": 1.0,
+        "uncertainty": 1.0,
+        "overreach": 1.0,
+        "intent": 1.0,
+        "all": 1.0
+      },
+      "contradictory": {
+        "citation": 1.0,
+        "numeric": 1.0,
+        "observed": 1.0,
+        "uncertainty": 1.0,
+        "overreach": 1.0,
+        "intent": 1.0,
+        "all": 1.0
+      },
+      "high_variance": {
+        "citation": 1.0,
+        "numeric": 1.0,
+        "observed": 1.0,
+        "uncertainty": 1.0,
+        "overreach": 1.0,
+        "intent": 1.0,
+        "all": 1.0
+      },
+      "imbalance": {
+        "citation": 1.0,
+        "numeric": 1.0,
+        "observed": 1.0,
+        "uncertainty": 1.0,
+        "overreach": 1.0,
+        "intent": 1.0,
+        "all": 1.0
+      },
+      "insufficient_sample": {
+        "citation": 1.0,
+        "numeric": 1.0,
+        "observed": 1.0,
+        "uncertainty": 1.0,
+        "overreach": 1.0,
+        "intent": 1.0,
+        "all": 1.0
+      },
+      "missing_segment": {
+        "citation": 1.0,
+        "numeric": 1.0,
+        "observed": 1.0,
+        "uncertainty": 1.0,
+        "overreach": 1.0,
+        "intent": 1.0,
+        "all": 1.0
+      },
+      "near_tie": {
+        "citation": 1.0,
+        "numeric": 1.0,
+        "observed": 1.0,
+        "uncertainty": 1.0,
+        "overreach": 1.0,
+        "intent": 1.0,
+        "all": 1.0
+      },
+      "stale": {
+        "citation": 1.0,
+        "numeric": 1.0,
+        "observed": 1.0,
+        "uncertainty": 1.0,
+        "overreach": 1.0,
+        "intent": 1.0,
+        "all": 1.0
+      }
+    },
+    "by_category": {
+      "assumptions": {
+        "citation": 1.0,
+        "numeric": 1.0,
+        "observed": 1.0,
+        "uncertainty": 1.0,
+        "overreach": 1.0,
+        "intent": 1.0,
+        "all": 1.0
+      },
+      "best_option": {
+        "citation": 1.0,
+        "numeric": 1.0,
+        "observed": 1.0,
+        "uncertainty": 1.0,
+        "overreach": 1.0,
+        "intent": 1.0,
+        "all": 1.0
+      },
+      "disagreement": {
+        "citation": 1.0,
+        "numeric": 1.0,
+        "observed": 1.0,
+        "uncertainty": 1.0,
+        "overreach": 1.0,
+        "intent": 1.0,
+        "all": 1.0
+      },
+      "evidence_status": {
+        "citation": 1.0,
+        "numeric": 1.0,
+        "observed": 1.0,
+        "uncertainty": 1.0,
+        "overreach": 1.0,
+        "intent": 1.0,
+        "all": 1.0
+      },
+      "flip": {
+        "citation": 1.0,
+        "numeric": 1.0,
+        "observed": 1.0,
+        "uncertainty": 1.0,
+        "overreach": 1.0,
+        "intent": 1.0,
+        "all": 1.0
+      },
+      "most_sensitive": {
+        "citation": 1.0,
+        "numeric": 1.0,
+        "observed": 1.0,
+        "uncertainty": 1.0,
+        "overreach": 1.0,
+        "intent": 1.0,
+        "all": 1.0
+      },
+      "real_world": {
+        "citation": 1.0,
+        "numeric": 1.0,
+        "observed": 1.0,
+        "uncertainty": 1.0,
+        "overreach": 1.0,
+        "intent": 1.0,
+        "all": 1.0
+      },
+      "robustness": {
+        "citation": 1.0,
+        "numeric": 1.0,
+        "observed": 1.0,
+        "uncertainty": 1.0,
+        "overreach": 1.0,
+        "intent": 1.0,
+        "all": 1.0
+      },
+      "segment_contribution": {
+        "citation": 1.0,
+        "numeric": 1.0,
+        "observed": 1.0,
+        "uncertainty": 1.0,
+        "overreach": 1.0,
+        "intent": 1.0,
+        "all": 1.0
+      },
+      "segment_pref": {
+        "citation": 1.0,
+        "numeric": 1.0,
+        "observed": 1.0,
+        "uncertainty": 1.0,
+        "overreach": 1.0,
+        "intent": 1.0,
+        "all": 1.0
+      },
+      "unsupported": {
+        "citation": 1.0,
+        "numeric": 1.0,
+        "observed": 1.0,
+        "uncertainty": 1.0,
+        "overreach": 1.0,
+        "intent": 1.0,
+        "all": 1.0
+      },
+      "why": {
+        "citation": 1.0,
+        "numeric": 1.0,
+        "observed": 1.0,
+        "uncertainty": 1.0,
+        "overreach": 1.0,
+        "intent": 1.0,
+        "all": 1.0
+      }
+    }
+  },
+  "baseline": {
+    "n_answers": 51,
+    "rates": {
+      "citation": 0.0,
+      "numeric": 0.6666666666666666,
+      "observed": 0.0784313725490196,
+      "uncertainty": 0.17647058823529413,
+      "overreach": 0.0392156862745098,
+      "intent": 1.0,
+      "all": 0.0
+    }
+  },
+  "mutation": {
+    "drop_citations": {
+      "applied": 408,
+      "caught": 408
+    },
+    "invalid_citation": {
+      "applied": 408,
+      "caught": 408
+    },
+    "alter_number": {
+      "applied": 308,
+      "caught": 308
+    },
+    "strip_generated_disclaimer": {
+      "applied": 350,
+      "caught": 350
+    },
+    "add_certainty": {
+      "applied": 408,
+      "caught": 408
+    },
+    "add_causal_story": {
+      "applied": 408,
+      "caught": 408
+    },
+    "add_real_world_claim": {
+      "applied": 408,
+      "caught": 408
+    }
+  },
+  "mutation_false_positives": {
+    "answers": 408,
+    "flagged": 0
+  },
+  "adversarial": {
+    "overreach_cases": 7,
+    "caught": 1,
+    "clean_cases": 6,
+    "false_positives": 0,
+    "missed": [
+      "In the simulation, Enterprise agents favored B, which reflects a deeper appetite for stability among larger organizations.",
+      "The simulation suggests enterprise buyers genuinely prefer reliability messaging.",
+      "In the simulation B wins, and this result will carry over to the market.",
+      "The simulation shows SMB and Enterprise are unambiguously aligned behind B.",
+      "This simulated result confirms that reliability messaging resonates with customers.",
+      "In the simulation, customers evidently prefer B."
+    ]
+  },
+  "n_questions": 51,
+  "base": {
+    "state": "MODERATE",
+    "headline": "B (Better reliability) leads A by 9.0pp in the simulation, but the lead depends on assumptions.",
+    "lead_pp": 9.023270315585314,
+    "win_rate_pct": 100.0,
+    "stability_pct": 74.75,
+    "most_sensitive": "reliability_sensitivity",
+    "n_evidence_rows": 184,
+    "flips": [
+      {
+        "assumption": "reliability_sensitivity",
+        "side": "below",
+        "value": 0.6259250393426085,
+        "unit": "coef",
+        "within_tested_range": true
+      },
+      {
+        "assumption": "enterprise_share",
+        "side": "below",
+        "value": 11.836648396531489,
+        "unit": "pct",
+        "within_tested_range": false
+      },
+      {
+        "assumption": "price_sensitivity_scale",
+        "side": "above",
+        "value": 1.2341163616807895,
+        "unit": "x",
+        "within_tested_range": false
+      },
+      {
+        "assumption": "setup_sensitivity",
+        "side": "above",
+        "value": 1.3131720464562082,
+        "unit": "x",
+        "within_tested_range": false
+      },
+      {
+        "assumption": "technical_shift",
+        "side": "below",
+        "value": -0.2793684721760644,
+        "unit": "rel",
+        "within_tested_range": false
+      }
+    ],
+    "segments": {
+      "company_size": [
+        {
+          "segment": "SMB",
+          "winner": "A",
+          "contribution_pp": -12.199480583724942,
+          "weight_pct": 49.99999999999999
+        },
+        {
+          "segment": "Mid-market",
+          "winner": "B",
+          "contribution_pp": 5.2948172258387425,
+          "weight_pct": 24.999999999999996
+        },
+        {
+          "segment": "Enterprise",
+          "winner": "B",
+          "contribution_pp": 15.927933673469314,
+          "weight_pct": 24.999999999999996
+        }
+      ],
+      "buyer_type": [
+        {
+          "segment": "Technical",
+          "winner": "B",
+          "contribution_pp": 7.148607002733892,
+          "weight_pct": 40.22997722738408
+        },
+        {
+          "segment": "Nontechnical",
+          "winner": "C",
+          "contribution_pp": 1.8746633128492314,
+          "weight_pct": 59.77002277261592
+        }
+      ]
+    }
+  }
+}
